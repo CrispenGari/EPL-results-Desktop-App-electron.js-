@@ -1,0 +1,22 @@
+{
+  "name": "epl-desktop-app",
+  "version": "1.0.0",
+  "description": "THIS IS AN (EPL (football) )DESKTOP APLICATION WITH WEBSCRAPING USING axios && cheerio",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "CRISPEN GARI",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "battery-level": "^3.0.0",
+    "cheerio": "^1.0.0-rc.3",
+    "is-charging": "^2.0.0",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "electron": "10.1.2"
+  }
+}

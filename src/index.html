@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/styles/index.css" />
+    <script
+      src="https://kit.fontawesome.com/c8de22c177.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>EPL App</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header__left">
+        <img
+          src="https://cdn.freebiesupply.com/images/large/2x/premier-league-logo-png-transparent.png"
+          alt=""
+        />
+      </div>
+      <h1>Club Sites</h1>
+      <div class="header__right" id="logos"></div>
+    </div>
+    <div class="top__nav">
+      <div class="top__navLeft">
+        <p>Premier League</p>
+        <p>Fantasy</p>
+        <p>Video</p>
+        <p>More</p>
+      </div>
+      <div class="top__navRight">
+        <p>Premier League</p>
+        <p>#WeAreOneTeam</p>
+        <p>Sign In</p>
+      </div>
+    </div>
+    <div class="top__header">
+      <div class="top__headerLeft">
+        <h1>Matchday <span>Live</span></h1>
+      </div>
+      <div class="top__headerRight">
+        <div class="top__headerRight-1">
+          <small> Change Matchweek </small>
+          <h5>Matchweek 3</h5>
+          <small>Date</small>
+        </div>
+        <div class="top__headerRight-2">
+          <em>Battery Status</em>
+          <div class="top__headerRight-2-battery">
+            <div id="battery__icon">
+              <i class="fas fa-battery-empty"> </i>
+            </div>
+            <span class="battrey-status">
+              <span id="percent"> 0% </span>
+              <span id="charging-status">(loading...)</span></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="body">
+      <div class="body__left">
+        <h4 id="heading_left"></h4>
+        <h4 id="date_left"></h4>
+
+        <table class="matches">
+          <th></th>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+      <button id="close">Close</button>
+    </div>
+
+    <script>
+      require("../static/scripts/index.js");
+    </script>
+  </body>
+</html>

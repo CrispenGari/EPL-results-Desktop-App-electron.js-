@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  --main-color: #37003c;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+.header__left {
+}
+.header__left > img {
+  width: 100px;
+  object-fit: contain;
+}
+.header__right {
+  flex: 1;
+  display: flex;
+  margin: 0 10px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 5px 10px;
+  transition: tranform 100ms ease-in-out;
+}
+
+.header__logo > a > img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin-left: 5px;
+}
+.header__logo:hover {
+  cursor: pointer;
+  transform: scale(1.06);
+}
+.header > h1 {
+  color: gray;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.top__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--main-color);
+  height: 50px;
+  padding: 2px 10px;
+  color: white;
+}
+.top__navRight,
+.top__navLeft {
+  display: flex;
+  align-items: center;
+}
+.top__navLeft {
+  flex: 1;
+}
+.top__navLeft > p,
+.top__navRight > p {
+  width: fit-content;
+  padding: 0, 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: transform 100ms ease;
+}
+.top__navLeft > p:hover,
+.top__navRight > p:hover {
+  transform: scale(1.05);
+}
+.top__header {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+  background-color: black;
+  padding: 5px 10px;
+}
+.top__headerLeft {
+  flex: 1;
+}
+.top__headerRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top__headerRight-1 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 200px;
+  cursor: pointer;
+}
+.top__headerRight-1 > small:first-child {
+  font-style: italic;
+  color: gray;
+}
+.top__headerRight-1 > small {
+  font-size: 11px;
+}
+.top__headerLeft > h1 {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.top__headerLeft > h1 > span {
+  font-weight: 700;
+}
+.top__headerRight-1 > h5 {
+  color: #e90052;
+}
+.top__headerRight-1 > h5:hover {
+  color: white;
+}
+.body {
+  display: grid;
+  place-items: center;
+  position: relative;
+  background-image: url("https://ourcommunity.ng/wp-content/uploads/2019/08/EPL.jpg");
+}
+.body__left {
+}
+table {
+  background-color: white !important;
+}
+.fas {
+  font-size: 25px !important;
+  margin-right: 5px !important;
+}
+.battrey-status {
+  font-size: 13px;
+}
+.top__headerRight-2 {
+  display: flex;
+  flex-direction: column;
+}
+#charging-status {
+  font-style: italic;
+}
+.table_row {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#close {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  border: none;
+  outline: none;
+  background-color: #37003c;
+  color: white;
+  cursor: pointer;
+  padding: 3px;
+}
+.table_row > td {
+  font-size: 15px;
+  border: 1px solid lightgray;
+  padding: 5px 10px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  font-size: small;
+}
+.table_row > td:first-child {
+  width: 50px;
+  text-align: center;
+}
+.table_row > td:last-child {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.table_row > td > img {
+  margin: 0 5px;
+}
+.top__headerRight-2-battery {
+  display: flex;
+  align-items: center;
+}
+.top__headerRight-2 > em {
+  color: #555;
+  font-size: 13px;
+}
+.pl-table > th > tr > td {
+  color: gray;
+  font-size: 15px;
+  text-align: center;
+}
+.pl-table-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+  width: 400px;
+}
+.pl-table-row > tbody {
+  width: 400px;
+}
+.pl-table-row > td {
+  width: 50px;
+  margin: 0 10;
+  padding: 5px 10px !important;
+}
+.pl-table-row > td:nth-child(2) {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+#body-right > h3 {
+  text-align: center;
+}
+.pl-table-row:first-child {
+}
+
+/* width */
+.header__right::-webkit-scrollbar {
+  height: 2px;
+}
+
+/* Track */
+
+.header__right::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+
+.header__right::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.header__right::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 999px;
+}
